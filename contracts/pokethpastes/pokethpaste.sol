@@ -1,3 +1,5 @@
+pragma solidity ^0.5.0;
+
 /*
  * Pokethpastes.sol
  *------------------
@@ -9,7 +11,7 @@
 
 contract Pokethpastes {
 
-    function publishPokethpaste(string pokethpaste) public returns (bool) {
+    function publishPokethpaste(string memory pokethpaste) public returns (bool) {
         emit PokethpasteUploaded(pokethpaste);
         return true;
     }    
